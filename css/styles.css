@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,500;1,700&display=swap');
+:root {
+    --yellow-white: #FFF8F1;
+    --purple: #755CDD;
+    --dark-purple: #551F4B;
+    --orange: #F6A561;
+    --dark-orange: #E97663;
+    --pink: #F49D9E;
+    --turquoise: #61C4B7;
+    --gray: #B7B2AA;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+/* Global styles */
+body, html {
+    background: var(--yellow-white);
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: white;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.bg-orange {
+    background: var(--orange);
+}
+
+.bg-dark-orange {
+    background: var(--dark-orange);
+}
+
+.bg-pink {
+    background: var(--pink);
+}
+
+.bg-purple {
+    background: var(--purple);
+}
+
+.bg-dark-purple {
+    background: var(--dark-purple);
+}
+
+.bg-turquoise {
+    background: var(--turquoise);
+}
+
+
+.rounded {
+    border-radius: 3rem;
+}
+
+.rounded-full {
+    border-radius: 50%;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    cursor: pointer;
+    display: inline-grid;
+    place-items: center;
+}
+
+.btn-square {
+    padding: .5rem;
+}
+
+.btn-dark {
+    background: black;
+    color: white;
+}
+
+.btn-orange {
+    background: var(--dark-orange);
+}
+
+.btn-orange:hover {
+    color: var(--dark-orange);
+    background: white;
+    box-shadow: 0 0 10px 1px var(--dark-orange);
+}
+
+.btn-dark:hover {
+    background: white;
+    color: black;
+    box-shadow: 0 0 10px 1px var(--gray);
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+
+.navigation .btn-square {
+    width: 50px;
+    height: 50px;
+}
+
+.btn-square .circle {
+    border-radius: 50%;
+    border: 4px solid white;
+    height: 30px;
+    width: 30px;
+}
+
+.btn-dark:hover .circle {
+    border-color: black;
+}
+
+/* Intro */
+.intro {
+    display: grid;
+    place-items: center;
+    /* border: 2px solid; */
+    text-align: center;
+    max-width: 500px;
+    margin-top: 1.5rem;
+}
+
+.intro h3 {
+    margin-bottom: 1rem;;
+}
+
+.intro p {
+    color: var(--gray);
+}
+
+/* Services */
+.services {
+    display: grid;
+    margin-top: 2rem;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.service {
+    color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.service p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    position: absolute;
+    bottom: 10%;
+
+}
+
+.service.s1 {
+    height: 250px;
+}
+
+/*  Me */
+.me {
+    display: grid;
+    place-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+.img-wrapper {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 2rem;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info {
+    max-width: 450px;
+}
+
+.info h4 {
+    margin-bottom: 1rem;
+}
+
+.info p {
+    color: var(--gray);
+    margin-bottom: 1.5rem;
+}
+
+/* Work */
+.work {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h4 {
+    text-align: center;
+}
+
+/* Contact */
+.contact {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.booking {
+    background: black;
+    color: white;
+    padding: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    height: 300px;
+}
+
+.booking .column h4 {
+    margin-bottom: 2rem;
+}
