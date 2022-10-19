@@ -185,7 +185,6 @@ h4 {
     font-weight: 500;
     position: absolute;
     bottom: 10%;
-
 }
 
 .service.s1 {
@@ -269,6 +268,8 @@ h4 {
 .controls .arrow {
     width: 40px;
     height: 40px;
+    display: grid;
+    place-items: center;
 }
 
 
