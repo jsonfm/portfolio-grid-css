@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Portfolio + Grid CSS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -67,15 +68,33 @@
         <h4>My work</h4>
         <div class="splide" aria-label="Splide Basic HTML Example">
             <div class="splide__track">
-                  <ul class="splide__list">
-                      <li class="splide__slide">Slide 01</li>
-                      <li class="splide__slide">Slide 02</li>
-                      <li class="splide__slide">Slide 03</li>
-                  </ul>
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img
+                            class="splide-img"
+                            src="https://images.pexels.com/photos/3045245/pexels-photo-3045245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        />
+                    </li>
+                    <li class="splide__slide">
+                        <img
+                            class="splide-img"
+                            src="https://images.pexels.com/photos/8828429/pexels-photo-8828429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        />
+                    </li>
+                    <li class="splide__slide">
+                        <img
+                            class="splide-img"
+                            src="https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        />
+                    </li>
+                </ul>
             </div>
         </div>
 
-        <div class="controls"></div>
+        <div class="controls">
+            <button class="arrow btn-dark rounded-full prev"></button>
+            <button class="arrow btn-dark rounded-full next"></button>
+        </div>
     </section>
 
     <section class="container contact">
@@ -104,5 +123,6 @@
     </nav>
 
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
