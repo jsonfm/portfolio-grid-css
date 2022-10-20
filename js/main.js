@@ -17,4 +17,17 @@ const splide = new Splide( '.splide', {
 		next  : 'splide__arrow--next next',
   },
 });
+
+const nextBtn = document.querySelector('.next');
+const prevBtn = document.querySelector('.prev');
+
 splide.mount();
+
+
+nextBtn.addEventListener('click', () => {
+  splide.go('+${i}');
+})
+
+prevBtn.addEventListener('click', () => {
+  splide.go('-${i}');
+})
